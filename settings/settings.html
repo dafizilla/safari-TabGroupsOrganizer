@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tabs Group</title>
+        <link rel="stylesheet" type="text/css" href="../styles/settings.css">
+        <script type="text/javascript" src="settings.js"></script>
+    </head>
+    <body onload="tabGroupsSettingsDialog.onLoad(event)">
+        <div class="root-container">
+            <div class="title">
+                <h1 style="padding: 0pt 0.7em; margin-top: 20px;">TabGroup Organizer</h1>
+            </div>
+            <ul id="tabs">
+              <li><a class="selected" id="groupsTab" href="javascript:void(0);" onclick="tabGroupsSettingsDialog.selectMenu(this.id);">Tab Groups</a></li>
+              <li><a id="importTab" href="javascript:void(0);" onclick="tabGroupsSettingsDialog.selectMenu(this.id);">Import</a></li>
+            </ul>
+                <div id="groupsTabPanel">
+                <form>
+                    <fieldset>
+                        <legend>Tab Groups List</legend>
+                        <div>
+                            <select class="list" id="groupsList" size="10">
+                            </select>
+                        </div>
+                        <div class="controls">
+                            <ul>
+                                <li><a id="restoreGroup" href="javascript:void(0)">Restore Group</a></li>
+                                <li><a id="saveGroup" href="javascript:void(0)">Save Open Tabs as Group</a></li>
+                                <li><a id="removeGroup" href="javascript:void(0)">Remove</a></li>
+                            </ul>
+                        </div>
+                    </fieldset>
+        
+                    <fieldset>
+                        <legend>Url(s) in group</legend>
+                        <div>
+                            <select class="list" id="groupUrls" size="10"></select>
+                            <input type="text" id="selectedUrl" size="100" readonly="readonly"></span>
+                        </div>
+                        <div class="controls">
+                            <ul>
+                                <li style="display: none"><a id="removeUrl" href="javascript:void(0)">Remove</a></li>
+                            </ul>
+                        </div>
+                    </fieldset>
+                </form>
+                </div>
+                
+                <div id="importTabPanel" style="display: none">
+                <form>
+                    <fieldset id="importExport">
+                        <legend>Import/Export</legend>
+                        <p>To Import copy the text obtained during export in the box below then press 'Import'</p>
+                        <p>To Export click 'Export' than store the obtained text where you prefer</p>
+                        <textarea id="importExportText" cols="70" rows="6"></textarea>
+                        <div class="controls">
+                            <ul>
+                                <li><a id="importGroups" href="javascript:void(0)">Import</a></li>
+                                <li><a id="exportGroups" href="javascript:void(0)">Export</a></li>
+                            </ul>
+                        </div>
+                    </fieldset>
+                </form>
+                </div>
+        </div>
+    </body>
+</html>

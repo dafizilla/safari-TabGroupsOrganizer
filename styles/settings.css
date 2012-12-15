@@ -1,0 +1,127 @@
+body {
+  color: #333333;
+  background-color: #EBEDF0;
+  font-family: "Lucida Grande",Geneva,Arial,Verdana,sans-serif;
+  font-size: 12px;
+  font-size-adjust: none;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+fieldset {
+  border: none;
+}
+
+.list {
+  background-color: #f0f4f8;
+  width: 600px;
+  border-radius: 2px;
+}
+
+#selectedUrl {
+  width: 600px;
+}
+
+.controls ul {
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin: 6px 0 0;
+  padding:0;
+  border: 0;
+}
+
+.controls li {
+  display:inline;
+  margin:0;
+  padding:0;
+}
+
+.controls li a {
+  color: #FFF;
+  font-weight: bold;
+  margin: 0 1em 0 0;
+  padding:2px 3px 2px;
+  background-color: #858585;
+  border-radius: 4px;
+}
+
+.controls li a:link {
+  text-decoration: none;
+}
+
+.controls li a:visited {
+  text-decoration: none;
+}
+
+.controls li a:active {
+  text-decoration: none;
+}
+
+.controls li a:hover {
+  text-decoration: none;
+  color: yellow;
+}
+
+.root-container {
+  margin: 0 20em;
+  width: 35em;
+}
+
+.title {
+  background-color: #858585;
+  color: #fff;
+  border-radius: 4px;
+}
+
+option:nth-child(even) {
+  background-color: #CCC;
+}
+
+option:nth-child(odd) {
+  background-color: #FFF;
+}
+
+#tabs {
+	width:100%;
+	padding:0 0 1.75em 1em;
+	margin:0;
+	list-style:none;
+	line-height:1em;
+}
+
+#tabs li {
+	display: inline;
+	margin:0;
+	padding:0;
+}
+
+#tabs a {
+	color:#444;
+	text-decoration:none;
+	font-weight:bold;
+	background:#bbb;
+	margin:0;
+	padding:0.25em 1em;
+	border-left:1px solid #fff;
+	border-top:1px solid #fff;
+	border-right:1px solid #aaa;
+}
+
+#tabs a:hover,
+#tabs a:active,
+#tabs a.selected:link,
+#tabs a.selected:visited {
+	background:#ddd;
+}
+
+#tabs a.selected {
+	cursor: default;
+}
+
+#importPanel, #groupsPanel {
+  width: 700px;
+  background-color:#BBBBBB;
+}
